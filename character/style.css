@@ -1,0 +1,152 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #000000;
+    cursor: auto;
+  }
+  
+a, button, .link-button, .toggle, .character-item {
+    cursor: pointer;
+  }
+  
+/* 헤더 이미지 */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+.header-images {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .yulri-image {
+    margin: 180px 0px 15px;
+    width: 190px;
+    border-radius: 50%;
+    border: 3px solid #c86b39;
+  }
+  
+  .title-image {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 210px;
+    pointer-events: none;
+  }
+  
+  h1 {
+    margin-top: 18px;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 37px;
+    color: #c86b39;
+  }
+  
+  /* 리스트 스타일 */
+  .character-list {
+    list-style: none;
+    padding: 0;
+    max-width: 620px;
+    margin: 0 auto;
+    pointer-events: auto;
+  }
+  
+  .toggle {
+    background: #f0f0f5;
+    border: 0px solid #c86b39;
+    border-radius: 40px;
+    margin: 16px 0;
+    padding: 26px 45px 26px;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: background 0.3s;
+  }
+  
+  .toggle:hover {
+    background: #c86b39;
+    cursor: pointer;
+  }
+  
+  
+  .character-name {
+    font-size: 17px;
+    font-weight: bold; 
+
+
+  }
+  
+  .content {
+    display: none;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px solid #000000;
+    color: #000000;
+  }
+  
+  .toggle.active .content {
+    display: block;
+    animation: fadeIn 0.4s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* 펼쳐진 토글 배경색 바꾸기 */
+.toggle.active {
+    background-color: #c86b39;
+  }
+  
+  /* 상단 링크 버튼 */
+  .link-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .link-icon {
+    width: 80px;
+    height: auto;
+    cursor: pointer; 
+  }
+
+  /* 토글 안 이미지와 글 스타일 */
+.character-item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .character-main-image img {
+    width: 400px !important;
+    height: auto;
+    display: block;
+    border: 1px solid #000000;
+  }
+  
+  .character-img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px; 
+    margin-left: 0opx; 
+
+
+  }
+  
+  .character-text {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #000000;
+
+  }
+  .link-button {
+    cursor: pointer;
+  }
+  
